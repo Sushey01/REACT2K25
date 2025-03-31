@@ -1,5 +1,5 @@
 import './App.css'
-import MovieCard from './components/MovieCard';
+import Home from "./pages/Home"
 
 function App() {
 const movieNumber = 1;
@@ -8,6 +8,7 @@ const movieNumber = 1;
 
   return (
     <> 
+    <Home />
 
      {/* conditional rendering method 1 using (?) */}
     {/* {movieNumber === 1 ? (
@@ -18,7 +19,7 @@ const movieNumber = 1;
 
 
     {/* conditional rendering method 2 using && */}
-      {movieNumber === 1 && <MovieCard movie={{title: "Beyblade Film", release_date: "2020"}}/>}
+      {/* {movieNumber === 1 && <MovieCard movie={{title: "Beyblade Film", release_date: "2020"}}/>} */}
     </> 
   );
 }
