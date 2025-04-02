@@ -40,8 +40,11 @@ function Home(){
             
             {/* // the .map function is used to iterate over all of the value inside and take it and pass it to this function and it returns the value of the movie object.  */}
             {movies.map((movie)=> (
-                movie.title.toLowerCase().startsWith(searchQuery) && (<MovieCard movie={movie} key={movie.id} /> //Passing the movie object as a prop to the MovieCard component and using the movie id as a key for each movie card.
-            )))}
+                // We going to use API for this search conditional rendering so we are not using the searchQuery state for now!
+                // movie.title.toLowerCase().startsWith(searchQuery) && (
+                <MovieCard movie={movie} key={movie.id} /> //Passing the movie object as a prop to the MovieCard component and using the movie id as a key for each movie card.
+            // )
+            ))}
         </div>
     </div>
     );
