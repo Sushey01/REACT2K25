@@ -2,7 +2,7 @@
 // This is a functional component named Home that returns a div with a class name of  "home".
 import MovieCard from "../components/MovieCard"
 import {useState} from "react"  //importing useState from react to manage state in functional components
-
+import "../css/Home.css"
 function Home(){
     const[searchQuery, setSearchQuery] = useState("");
 

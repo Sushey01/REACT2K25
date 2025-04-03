@@ -1,4 +1,4 @@
-
+import "../css/MovieCard.css"
 
 function MovieCard({movie}) {  //movie is props and when it is passed it is accepted
   
